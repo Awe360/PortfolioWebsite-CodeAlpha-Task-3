@@ -2,7 +2,15 @@ import React from 'react';
 import ts from '../assets/textToSpeech.png'
 import campusRide from '../assets/campusRide.png'
 import pms from '../assets/pms.png'
+import hrba from '../assets/photo2.png'
 const projectsData = [
+
+  {
+    title: 'Hotel Room Booking App',
+    imgSrc: '../assets/photo2.png',
+    githubLink: 'https://github.com/Awe360/Hotel-Room-Booking-App',
+    liveDemoLink: 'https://github.com/',
+  },
   {
     title: 'Text to Speech',
     imgSrc: '../assets/TS.webp',
@@ -28,6 +36,30 @@ const Project = () => {
     <section id="projects" className="py-16 bg-gray-100">
       <h1 className="text-4xl font-bold text-center text-black my-4">Projects</h1>
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-5">
+      <div className="bg-blue-300 transition-transform duration-300 hover:scale-105 border border-gray-300 p-5 rounded-xl shadow-lg" >
+            <div className="overflow-hidden rounded-lg">
+              <img
+                src={hrba}
+                alt={'Text to Speech '}
+                className="w-full h-60 object-cover rounded-xl "
+              />
+            </div>
+            <h2 className="text-2xl font-semibold text-black mt-4">Hotel Room Booking</h2>
+            <div className="flex justify-between mt-4 space-x-3">
+              <button
+                className="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-200"
+                onClick={() => window.location.href = 'https://github.com/Awe360/Hotel-Room-Booking-App'}
+              >
+                Github
+              </button>
+              <button
+                className="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition duration-200"
+                onClick={() => window.location.href = project.liveDemoLink}
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
 
           <div className="bg-blue-300 transition-transform duration-300 hover:scale-105 border border-gray-300 p-5 rounded-xl shadow-lg" >
             <div className="overflow-hidden rounded-lg">
